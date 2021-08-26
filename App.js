@@ -14,6 +14,11 @@ const firebaseConfig = {
 
 };
 
+if(firebase.apps.length === 0){
+    firebase.initializeApp(firebaseConfig)
+
+}
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import LandingScreen from './components/auth/landing'
