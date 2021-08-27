@@ -1,7 +1,7 @@
 import React from 'react'
 import {Text, View, Button} from 'react-native'
 
-export default function landing({ navigation }){
+export default function Landing({ navigation }){
   return (
       <View style ={{ flex: 1, justifyContent: 'center'}}>
             <Button
@@ -10,7 +10,7 @@ export default function landing({ navigation }){
 
             <Button
                   title = "login"
-                  onPress ={() => navigation.navigate("login")}  />
+                  onPress ={() => navigation.navigate("Login")}  />
       </View>
 
 

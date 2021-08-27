@@ -14,10 +14,13 @@ const firebaseConfig = {
 
 };
 
-if(firebase.apps.length === 0){
-    firebase.initializeApp(firebaseConfig)
-
+export function initialize(){
+    if (!firebase.apps.legnth){
+      firebase.initializeApp(firebaseConfig);
+    }
 }
+
+
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -30,7 +33,7 @@ export default function App() {
         <NavigationContainer>
           <Stack.Navigator initialRouteName= "landing">
               <Stack.Screen name = "landing" component ={LandingScreen}  options ={{headerShown: false}} />
-              <Stack.Screen name = "register" component ={RegisterScreen} />
+              <Stack.Screen name = "Register" component ={RegisterScreen} />
           </Stack.Navigator>
 
         </NavigationContainer>
