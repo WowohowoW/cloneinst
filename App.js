@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 
-import * as firebase from 'firebase'
+import {initializeApp} from 'firebase/app';
 
 const firebaseConfig = {
       apiKey: "AIzaSyBzvBHbRjrHU-S--rXJUOmtKBgshiP46Ek",
