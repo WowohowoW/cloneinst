@@ -48,7 +48,7 @@ export class Register extends React.Component {
                   <TextInput
                         placeholder = 'password'
                         secureTextEntry = {true}
-                        onChangeText = {(passwod) => this.setState({password})}
+                        onChangeText = {(password) => this.setState({password})}
                   />
 
                   <Button
