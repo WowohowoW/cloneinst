@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 
 import {initializeApp} from 'firebase/app'
+import {getFirestore} from "firebase/firestore"
+
 
 const firebaseConfig = {
         apiKey: "AIzaSyBzvBHbRjrHU-S--rXJUOmtKBgshiP46Ek",
@@ -25,7 +27,7 @@ export function initialize(){
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import LandingScreen from './components/auth/landing'
-import Register from './components/auth/register'
+import RegisterScreen from './components/auth/register'
 
 const Stack = createStackNavigator();
 export default function App() {

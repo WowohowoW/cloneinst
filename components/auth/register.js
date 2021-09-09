@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { View, Button, TextInput } from 'react-native'
 
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import {doc, setDoc } from "firebase/firestore";
 
-export class Register extends React.Component {
+export class Register extends Component {
       constructor(props){
           super(props);
+
               this.state = {
                   email: '',
                   password: '',
